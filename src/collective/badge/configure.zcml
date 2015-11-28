@@ -25,6 +25,20 @@
     template="templates/badge_view.pt"
     permission="zope2.View"
     />
+  
+  <browser:page
+    name="openbadge.json"
+    for=".interfaces.IBadge"
+    permission="zope2.View"
+    class=".openbadge.OpenBadgeJSON"
+    />
+    
+  <browser:page
+    name="openbadge_issuer.json"
+    for="Products.CMFCore.interfaces.ISiteRoot"
+    permission="zope2.View"
+    class=".openbadge_issuer.OpenBadgeIssuerJSON"
+    />
 
   <permission
     id="collective.badge.addBadge"

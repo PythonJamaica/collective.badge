@@ -4,8 +4,10 @@ bin
 develop-eggs
 include
 lib
+*.egg-info
 parts
 *.egg
 output.xml
 report.html
 log.html
+*.pyc
